@@ -15,6 +15,13 @@ namespace EducationHelper
         public FormSettings()
         {
             InitializeComponent();
+            InitControls();
+        }
+
+        void InitControls()
+        {
+            textBox_path.Text = Settings.Path;
+            numericUpDown_interval.Value = Settings.Interval/60000; // to minutes
         }
 
         private void button_settings_cancel_Click(object sender, EventArgs e)
@@ -28,11 +35,32 @@ namespace EducationHelper
             {
                 Settings.Path = textBox_path.Text;
                 Settings.Interval = (int)numericUpDown_interval.Value * 60000; //to milliseconds
+                this.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Exception from FormSettings. Method button_settings_ok_Click. " + ex.Message);
             }            
+        }
+
+        private void button_select_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var selectFileDialog = new OpenFileDialog())
+                {
+                    selectFileDialog.Filter = "Text Files|*.txt;";
+                    if (selectFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        textBox_path.Text = selectFileDialog.FileName;
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception from button_select_Click method. " + ex.Message);
+            }
         }
     }
 }

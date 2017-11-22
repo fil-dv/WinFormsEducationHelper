@@ -7,3 +7,5 @@ D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\Educat
 D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.csproj.GenerateResource.Cache
 D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.exe
 D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.pdb
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.FormSettings.resources
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.FormTask.resources

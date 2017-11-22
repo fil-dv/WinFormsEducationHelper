@@ -27,7 +27,8 @@ namespace EducationHelper
 
         void Settings(object sender, EventArgs e)
         {
-           
+            FormSettings fs = new FormSettings();
+            fs.ShowDialog();  
         }
 
         void Exit(object sender, EventArgs e)
@@ -41,7 +42,7 @@ namespace EducationHelper
         {
             _timer = new System.Timers.Timer();
             _timer.Enabled = true;
-            _timer.Interval = 10000; // 10sec
+            _timer.Interval = EducationHelper.Settings.Interval; // 10sec
             _timer.Elapsed += new System.Timers.ElapsedEventHandler(this.timer_Elapsed);
             _timer.AutoReset = true;
             _timer.Start();
@@ -49,7 +50,9 @@ namespace EducationHelper
 
         private void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            MessageBox.Show("Hola de tray!");
+            //MessageBox.Show("Hola de tray!");
+            FormTask ft = new FormTask();
+            ft.ShowDialog();
         }
     }
 }
