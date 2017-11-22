@@ -1,0 +1,9 @@
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\bin\Debug\EducationHelper.exe.config
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\bin\Debug\EducationHelper.exe
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\bin\Debug\EducationHelper.pdb
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.csprojResolveAssemblyReference.cache
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.MainForm.resources
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.Properties.Resources.resources
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.csproj.GenerateResource.Cache
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.exe
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.pdb
