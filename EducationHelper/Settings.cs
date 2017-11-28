@@ -1,4 +1,6 @@
 ﻿
+
+
 namespace EducationHelper
 {
     public static class Settings

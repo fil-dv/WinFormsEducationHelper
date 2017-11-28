@@ -7,7 +7,9 @@ namespace EducationHelper
     class MyCustomApplicationContext : ApplicationContext
     {
         private NotifyIcon trayIcon;
-        private System.Timers.Timer _timer;
+        MyTimer _myTimer = new MyTimer();
+
+       
 
         public MyCustomApplicationContext()
         {
@@ -22,7 +24,8 @@ namespace EducationHelper
                 Visible = true
             };
 
-            StartTimer();
+            _myTimer.StartTimer();
+            
         }       
 
         void Settings(object sender, EventArgs e)
@@ -38,21 +41,12 @@ namespace EducationHelper
             Application.Exit();
         }
 
-        void StartTimer()
-        {
-            _timer = new System.Timers.Timer();
-            _timer.Enabled = true;
-            _timer.Interval = EducationHelper.Settings.Interval; // 10sec
-            _timer.Elapsed += new System.Timers.ElapsedEventHandler(this.timer_Elapsed);
-            _timer.AutoReset = true;
-            _timer.Start();
-        }
+       
 
-        private void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
-        {
-            //MessageBox.Show("Hola de tray!");
-            FormTask ft = new FormTask();
-            ft.ShowDialog();
-        }
+
+
+
+
+
     }
 }

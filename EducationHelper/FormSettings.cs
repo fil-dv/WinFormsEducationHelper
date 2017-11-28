@@ -12,16 +12,18 @@ namespace EducationHelper
 {
     public partial class FormSettings : Form
     {
+        SettingsChanger changer = new SettingsChanger();
         public FormSettings()
         {
             InitializeComponent();
             InitControls();
+            changer.OldInterval = Settings.Interval;
         }
 
         void InitControls()
         {
             textBox_path.Text = Settings.Path;
-            numericUpDown_interval.Value = Settings.Interval/60000; // to minutes
+            numericUpDown_interval.Value = Settings.Interval/60000; // to minutes           
         }
 
         private void button_settings_cancel_Click(object sender, EventArgs e)
@@ -29,12 +31,16 @@ namespace EducationHelper
             this.Close();
         }
 
+        
+
         private void button_settings_ok_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 Settings.Path = textBox_path.Text;
                 Settings.Interval = (int)numericUpDown_interval.Value * 60000; //to milliseconds
+                changer.IsIntervalChange();
                 this.Close();
             }
             catch (Exception ex)
