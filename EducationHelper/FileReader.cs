@@ -22,7 +22,7 @@ namespace EducationHelper
             string task = "";
             using (var streamReader = File.OpenText(fileName))
             {                
-                var tasks = streamReader.ReadToEnd().Split(',');
+                var tasks = streamReader.ReadToEnd().Split('#');
                 int rnd = GetRandomNumber(tasks.Count());
                 task = tasks[rnd];
             }

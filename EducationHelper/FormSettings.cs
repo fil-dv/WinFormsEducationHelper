@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace EducationHelper
@@ -30,14 +23,17 @@ namespace EducationHelper
         {
             this.Close();
         }
-
-        
+                
 
         private void button_settings_ok_Click(object sender, EventArgs e)
-        {
-            
+        {            
             try
             {
+                if ((int)numericUpDown_interval.Value < 1)
+                {
+                    MessageBox.Show("Not correct values!");
+                    return;
+                }
                 Settings.Path = textBox_path.Text;
                 Settings.Interval = (int)numericUpDown_interval.Value * 60000; //to milliseconds
                 _changer.IsIntervalChange();

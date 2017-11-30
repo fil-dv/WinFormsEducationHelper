@@ -45,7 +45,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_path.Location = new System.Drawing.Point(87, 12);
             this.textBox_path.Name = "textBox_path";
-            this.textBox_path.Size = new System.Drawing.Size(413, 20);
+            this.textBox_path.Size = new System.Drawing.Size(241, 20);
             this.textBox_path.TabIndex = 0;
             // 
             // label1
@@ -69,14 +69,29 @@
             // numericUpDown_interval
             // 
             this.numericUpDown_interval.Location = new System.Drawing.Point(87, 46);
+            this.numericUpDown_interval.Maximum = new decimal(new int[] {
+            360,
+            0,
+            0,
+            0});
+            this.numericUpDown_interval.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown_interval.Name = "numericUpDown_interval";
             this.numericUpDown_interval.Size = new System.Drawing.Size(52, 20);
             this.numericUpDown_interval.TabIndex = 4;
+            this.numericUpDown_interval.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // button_settings_ok
             // 
             this.button_settings_ok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_settings_ok.Location = new System.Drawing.Point(425, 100);
+            this.button_settings_ok.Location = new System.Drawing.Point(253, 100);
             this.button_settings_ok.Name = "button_settings_ok";
             this.button_settings_ok.Size = new System.Drawing.Size(75, 23);
             this.button_settings_ok.TabIndex = 5;
@@ -87,7 +102,7 @@
             // button_settings_cancel
             // 
             this.button_settings_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_settings_cancel.Location = new System.Drawing.Point(344, 100);
+            this.button_settings_cancel.Location = new System.Drawing.Point(172, 100);
             this.button_settings_cancel.Name = "button_settings_cancel";
             this.button_settings_cancel.Size = new System.Drawing.Size(75, 23);
             this.button_settings_cancel.TabIndex = 6;
@@ -98,7 +113,7 @@
             // button_select
             // 
             this.button_select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_select.Location = new System.Drawing.Point(344, 43);
+            this.button_select.Location = new System.Drawing.Point(172, 43);
             this.button_select.Name = "button_select";
             this.button_select.Size = new System.Drawing.Size(156, 23);
             this.button_select.TabIndex = 7;
@@ -110,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(512, 135);
+            this.ClientSize = new System.Drawing.Size(340, 135);
             this.Controls.Add(this.button_select);
             this.Controls.Add(this.button_settings_cancel);
             this.Controls.Add(this.button_settings_ok);
