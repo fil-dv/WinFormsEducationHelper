@@ -15,14 +15,21 @@ namespace EducationHelper
 
         void InitTextBox()
         {
-            richTextBox_task.Text = "";
-            string taskStr = FileReader.ReadTask(Settings.Path);
-            _taskArr = taskStr.Split('|');
-            richTextBox_task.AppendText(_taskArr[0]);
-            if (_taskArr[1] != null)
+            try
             {
-                button_show_answer.Visible = true;
+                richTextBox_task.Text = "";
+                string taskStr = FileReader.ReadTask(Settings.Path);
+                _taskArr = taskStr.Split('|');
+                richTextBox_task.AppendText(_taskArr[0]);
+                if (_taskArr.Length > 1)
+                {
+                    button_show_answer.Visible = true;
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("InitTextBox Method exception. " + ex.Message);
+            }            
         }
 
         private void button_task_ok_Click(object sender, EventArgs e)
