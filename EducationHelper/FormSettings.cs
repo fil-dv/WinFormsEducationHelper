@@ -12,12 +12,12 @@ namespace EducationHelper
 {
     public partial class FormSettings : Form
     {
-        SettingsChanger changer = new SettingsChanger();
+        SettingsChanger _changer = new SettingsChanger();
         public FormSettings()
         {
             InitializeComponent();
             InitControls();
-            changer.OldInterval = Settings.Interval;
+            _changer.OldInterval = Settings.Interval;
         }
 
         void InitControls()
@@ -40,7 +40,7 @@ namespace EducationHelper
             {
                 Settings.Path = textBox_path.Text;
                 Settings.Interval = (int)numericUpDown_interval.Value * 60000; //to milliseconds
-                changer.IsIntervalChange();
+                _changer.IsIntervalChange();
                 this.Close();
             }
             catch (Exception ex)

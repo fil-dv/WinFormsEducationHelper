@@ -7,7 +7,7 @@ namespace EducationHelper
     class MyCustomApplicationContext : ApplicationContext
     {
         private NotifyIcon trayIcon;
-        MyTimer _myTimer = new MyTimer();
+        //MyTimer _myTimer = new MyTimer();
 
        
 
@@ -24,7 +24,7 @@ namespace EducationHelper
                 Visible = true
             };
 
-            _myTimer.StartTimer();
+            MyTimer.StartTimer();
             
         }       
 

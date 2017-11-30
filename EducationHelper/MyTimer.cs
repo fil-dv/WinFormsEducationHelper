@@ -7,15 +7,15 @@ using System.Windows.Forms;
 
 namespace EducationHelper
 {
-    public class MyTimer
+    public static class MyTimer
     {
-        private System.Timers.Timer _timer;
-        SettingsChanger _changer = new SettingsChanger();
+        static System.Timers.Timer _timer;
+        static SettingsChanger _changer = new SettingsChanger();
         
 
-        public void StartTimer()
+        public static void StartTimer()
         {
-            _changer.OnChange += ChangeInterval;
+            //_changer.OnChange += ChangeInterval;
             _timer = new System.Timers.Timer();
             _timer.Enabled = true;
             _timer.Interval = EducationHelper.Settings.Interval; // 10sec
@@ -24,16 +24,28 @@ namespace EducationHelper
             _timer.Start();
         }
 
-        private void ChangeInterval(object sender, EventArgs e)
+        static void ChangeInterval(object sender, EventArgs e)
         {
             MessageBox.Show(String.Format("old = {0}, new = {1}", _changer.OldInterval, Settings.Interval));
             _timer.Interval = EducationHelper.Settings.Interval;
         }
 
-        private void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        static void timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
             FormTask ft = new FormTask();
             ft.ShowDialog();          
+        }
+
+        public static void StopTimer()
+        {
+            try
+            {
+                _timer.Stop();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception from StopTimer(). " + ex.Message);
+            }
         }
     }
 }
