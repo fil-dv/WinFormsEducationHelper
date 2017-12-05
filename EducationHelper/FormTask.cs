@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
 namespace EducationHelper
@@ -39,12 +40,33 @@ namespace EducationHelper
 
         private void button_show_answer_Click(object sender, EventArgs e)
         {
-            if (_taskArr[1] != null)
+            if (_taskArr.Length > 1)
             {
-                richTextBox_task.AppendText("\n\n");
-                richTextBox_task.AppendText(_taskArr[1]);
-                button_show_answer.Visible = false;
+                if (IsItPhoto() == false)
+                {
+                    richTextBox_task.AppendText("\n\n");
+                    richTextBox_task.AppendText(_taskArr[1]);
+                    button_show_answer.Visible = false;
+                }
+                else
+                {
+                    Mediator.Path = _taskArr[1].Trim();
+                    FormPhoto fp = new FormPhoto();
+                    fp.Owner = this;
+                    fp.ShowDialog();
+                }
             }            
+        }
+
+        bool IsItPhoto()
+        {            
+            //string regex = @"([a-z]:\)";
+            //if (Regex.IsMatch(_taskArr[1].Trim(), @"/[a-z]:\/"))
+            if(_taskArr[1].Contains(@":\"))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

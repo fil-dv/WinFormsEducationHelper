@@ -9,3 +9,4 @@ D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\Educat
 D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.pdb
 D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.FormSettings.resources
 D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.FormTask.resources
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.FormPhoto.resources
