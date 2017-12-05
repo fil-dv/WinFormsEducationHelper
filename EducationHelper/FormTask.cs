@@ -53,6 +53,7 @@ namespace EducationHelper
                     Mediator.Path = _taskArr[1].Trim();
                     FormPhoto fp = new FormPhoto();
                     fp.Owner = this;
+                    this.Hide();
                     fp.ShowDialog();
                 }
             }            
