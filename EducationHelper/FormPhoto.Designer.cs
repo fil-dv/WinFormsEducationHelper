@@ -36,9 +36,10 @@
             // 
             // button_photo_ok
             // 
-            this.button_photo_ok.Location = new System.Drawing.Point(577, 498);
+            this.button_photo_ok.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_photo_ok.Location = new System.Drawing.Point(12, 376);
             this.button_photo_ok.Name = "button_photo_ok";
-            this.button_photo_ok.Size = new System.Drawing.Size(75, 23);
+            this.button_photo_ok.Size = new System.Drawing.Size(640, 23);
             this.button_photo_ok.TabIndex = 0;
             this.button_photo_ok.Text = "Ok";
             this.button_photo_ok.UseVisualStyleBackColor = true;
@@ -46,12 +47,10 @@
             // 
             // pictureBox_photo
             // 
-            this.pictureBox_photo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox_photo.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox_photo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox_photo.Location = new System.Drawing.Point(12, 10);
             this.pictureBox_photo.Name = "pictureBox_photo";
-            this.pictureBox_photo.Size = new System.Drawing.Size(640, 480);
+            this.pictureBox_photo.Size = new System.Drawing.Size(640, 360);
             this.pictureBox_photo.TabIndex = 1;
             this.pictureBox_photo.TabStop = false;
             // 
@@ -59,7 +58,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(665, 525);
+            this.ClientSize = new System.Drawing.Size(665, 411);
             this.Controls.Add(this.pictureBox_photo);
             this.Controls.Add(this.button_photo_ok);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
