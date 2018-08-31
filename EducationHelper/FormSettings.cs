@@ -16,7 +16,10 @@ namespace EducationHelper
         void InitControls()
         {
             textBox_path.Text = Settings.Path;
-            numericUpDown_interval.Value = Settings.Interval/60000; // to minutes           
+            numericUpDown_interval.Value = Settings.Interval/60000; // to minutes    
+            comboBox_language.Items.Add(Language.Spain);
+            comboBox_language.Items.Add(Language.Italy);
+            comboBox_language.SelectedIndex = 1;
         }
 
         private void button_settings_cancel_Click(object sender, EventArgs e)
@@ -63,6 +66,11 @@ namespace EducationHelper
             {
                 MessageBox.Show("Exception from button_select_Click method. " + ex.Message);
             }
+        }
+
+        private void comboBox_language_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Mediator.Lang = (Language)comboBox_language.SelectedItem;
         }
     }
 }

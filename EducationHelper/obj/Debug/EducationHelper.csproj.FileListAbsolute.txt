@@ -10,3 +10,4 @@ D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\Educat
 D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.FormSettings.resources
 D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.FormTask.resources
 D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.FormPhoto.resources
+D:\Dima\Programming\git\WinFormsEducationHelper\EducationHelper\obj\Debug\EducationHelper.csproj.CoreCompileInputs.cache

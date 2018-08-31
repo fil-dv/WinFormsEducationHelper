@@ -11,15 +11,30 @@ namespace EducationHelper
         public MyCustomApplicationContext()
         {
             // Initialize Tray Icon
-            trayIcon = new NotifyIcon()
+            if (Mediator.Lang == Language.Spain)
             {
-                Icon = new Icon("..\\..\\img\\spain_flag.ico"),
-                ContextMenu = new ContextMenu(new MenuItem[] {
+                trayIcon = new NotifyIcon()
+                {
+                    Icon = new Icon("..\\..\\img\\spain_flag.ico"),
+                    ContextMenu = new ContextMenu(new MenuItem[] {
                                                     new MenuItem("Settings", Settings),
-                                                    new MenuItem("Exit", Exit)          
+                                                    new MenuItem("Exit", Exit)
                                                               }),
-                Visible = true
-            };
+                    Visible = true
+                };
+            }
+            else
+            {
+                trayIcon = new NotifyIcon()
+                {
+                    Icon = new Icon("..\\..\\img\\italy_flag.ico"),
+                    ContextMenu = new ContextMenu(new MenuItem[] {
+                                                    new MenuItem("Settings", Settings),
+                                                    new MenuItem("Exit", Exit)
+                                                              }),
+                    Visible = true
+                };
+            }          
 
             MyTimer.StartTimer();            
         }       

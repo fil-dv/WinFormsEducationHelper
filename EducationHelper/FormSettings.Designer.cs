@@ -36,6 +36,8 @@
             this.button_settings_ok = new System.Windows.Forms.Button();
             this.button_settings_cancel = new System.Windows.Forms.Button();
             this.button_select = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox_language = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_interval)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +47,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox_path.Location = new System.Drawing.Point(87, 12);
             this.textBox_path.Name = "textBox_path";
-            this.textBox_path.Size = new System.Drawing.Size(241, 20);
+            this.textBox_path.Size = new System.Drawing.Size(302, 20);
             this.textBox_path.TabIndex = 0;
             // 
             // label1
@@ -80,7 +82,7 @@
             0,
             0});
             this.numericUpDown_interval.Name = "numericUpDown_interval";
-            this.numericUpDown_interval.Size = new System.Drawing.Size(52, 20);
+            this.numericUpDown_interval.Size = new System.Drawing.Size(106, 20);
             this.numericUpDown_interval.TabIndex = 4;
             this.numericUpDown_interval.Value = new decimal(new int[] {
             1,
@@ -91,7 +93,7 @@
             // button_settings_ok
             // 
             this.button_settings_ok.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_settings_ok.Location = new System.Drawing.Point(253, 100);
+            this.button_settings_ok.Location = new System.Drawing.Point(314, 100);
             this.button_settings_ok.Name = "button_settings_ok";
             this.button_settings_ok.Size = new System.Drawing.Size(75, 23);
             this.button_settings_ok.TabIndex = 5;
@@ -102,7 +104,7 @@
             // button_settings_cancel
             // 
             this.button_settings_cancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_settings_cancel.Location = new System.Drawing.Point(172, 100);
+            this.button_settings_cancel.Location = new System.Drawing.Point(233, 100);
             this.button_settings_cancel.Name = "button_settings_cancel";
             this.button_settings_cancel.Size = new System.Drawing.Size(75, 23);
             this.button_settings_cancel.TabIndex = 6;
@@ -113,7 +115,7 @@
             // button_select
             // 
             this.button_select.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_select.Location = new System.Drawing.Point(172, 43);
+            this.button_select.Location = new System.Drawing.Point(233, 43);
             this.button_select.Name = "button_select";
             this.button_select.Size = new System.Drawing.Size(156, 23);
             this.button_select.TabIndex = 7;
@@ -121,11 +123,31 @@
             this.button_select.UseVisualStyleBackColor = true;
             this.button_select.Click += new System.EventHandler(this.button_select_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(64, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Langueage:";
+            // 
+            // comboBox_language
+            // 
+            this.comboBox_language.FormattingEnabled = true;
+            this.comboBox_language.Location = new System.Drawing.Point(87, 78);
+            this.comboBox_language.Name = "comboBox_language";
+            this.comboBox_language.Size = new System.Drawing.Size(106, 21);
+            this.comboBox_language.TabIndex = 9;
+            this.comboBox_language.SelectedIndexChanged += new System.EventHandler(this.comboBox_language_SelectedIndexChanged);
+            // 
             // FormSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 135);
+            this.ClientSize = new System.Drawing.Size(401, 135);
+            this.Controls.Add(this.comboBox_language);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button_select);
             this.Controls.Add(this.button_settings_cancel);
             this.Controls.Add(this.button_settings_ok);
@@ -152,5 +174,7 @@
         private System.Windows.Forms.Button button_settings_ok;
         private System.Windows.Forms.Button button_settings_cancel;
         private System.Windows.Forms.Button button_select;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox_language;
     }
 }
