@@ -10,7 +10,9 @@ namespace EducationHelper
        
         public MyCustomApplicationContext()
         {
-            // Initialize Tray Icon
+            Mediator.Lang = Language.Italy;             /////////////////////       set default language        ///////////////////
+
+            // Initialize Tray Icon, set path to settings
             if (Mediator.Lang == Language.Spain)
             {
                 trayIcon = new NotifyIcon()
@@ -22,6 +24,7 @@ namespace EducationHelper
                                                               }),
                     Visible = true
                 };
+                EducationHelper.Settings.Path = @"d:\Dima\Google\EducationHelper\Spanish\questions.txt";
             }
             else
             {
@@ -34,6 +37,7 @@ namespace EducationHelper
                                                               }),
                     Visible = true
                 };
+                EducationHelper.Settings.Path = @"d:\Dima\Google\EducationHelper\Italian\questions.txt ";
             }          
 
             MyTimer.StartTimer();            

@@ -8,6 +8,16 @@ namespace EducationHelper
         public FormPhoto()
         {
             InitializeComponent();
+            if (Mediator.Lang == Language.Spain)
+            {
+                this.Icon = EducationHelper.Properties.Resources.IconSpain;
+                this.Text = "¡Hola!";
+            }
+            else
+            {
+                this.Icon = EducationHelper.Properties.Resources.IconItaly;
+                this.Text = "Ciao!";
+            }            
             ShowPhoto();
         }
 

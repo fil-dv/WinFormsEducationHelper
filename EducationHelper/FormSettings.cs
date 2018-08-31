@@ -9,6 +9,17 @@ namespace EducationHelper
         public FormSettings()
         {
             InitializeComponent();
+
+            if (Mediator.Lang == Language.Spain)
+            {
+                this.Icon = EducationHelper.Properties.Resources.IconSpain;
+            }
+            else
+            {
+                this.Icon = EducationHelper.Properties.Resources.IconItaly;
+            }
+            
+
             InitControls();
             _changer.OldInterval = Settings.Interval;
         }
@@ -60,7 +71,6 @@ namespace EducationHelper
                         textBox_path.Text = selectFileDialog.FileName;
                     }
                 }
-
             }
             catch (Exception ex)
             {
