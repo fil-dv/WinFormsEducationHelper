@@ -12,7 +12,7 @@ namespace EducationHelper
         {
             InitializeComponent();
 
-            if (Mediator.Lang == Language.Spain)
+            if (Mediator.Lang == Language.Spanish)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconSpain;
                 this.Text = "¡Hola!";
@@ -31,7 +31,7 @@ namespace EducationHelper
             try
             {
                 richTextBox_task.Text = "";
-                string taskStr = FileReader.ReadTask(Settings.Path);
+                string taskStr = FileReader.ReadTask(EducationHelper.Settings.Path);
                 _taskArr = taskStr.Split('|');
                 richTextBox_task.AppendText(_taskArr[0]);
                 if (_taskArr.Length > 1)

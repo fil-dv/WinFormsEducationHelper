@@ -6,16 +6,36 @@ namespace EducationHelper
 {
     class MyCustomApplicationContext : ApplicationContext
     {
-        private NotifyIcon trayIcon;
+        private NotifyIcon _trayIcon;
        
         public MyCustomApplicationContext()
         {
-            Mediator.Lang = Language.Italy;             /////////////////////       set default language        ///////////////////
+            Mediator.Lang = Language.Italian;             /////////////////////       set default language        ///////////////////            
+            SetTrayIcon();
+            FormSettings.LanguageChanged += FormSettings_LanguageChanged;       
+        }
 
-            // Initialize Tray Icon, set path to settings
-            if (Mediator.Lang == Language.Spain)
+        private void FormSettings_LanguageChanged()
+        {
+            if (_trayIcon != null)
             {
-                trayIcon = new NotifyIcon()
+                if (Mediator.Lang == Language.Spanish)
+                {
+                    _trayIcon.Icon = EducationHelper.Properties.Resources.IconSpain;
+                }
+                else
+                {
+                    _trayIcon.Icon = EducationHelper.Properties.Resources.IconItaly;
+                }
+                SetPathToQuerstions();
+            }           
+        }
+
+        private void SetTrayIcon()
+        {
+            if (Mediator.Lang == Language.Spanish)
+            {
+                _trayIcon = new NotifyIcon()
                 {
                     Icon = new Icon("..\\..\\img\\spain_flag.ico"),
                     ContextMenu = new ContextMenu(new MenuItem[] {
@@ -23,12 +43,11 @@ namespace EducationHelper
                                                     new MenuItem("Exit", Exit)
                                                               }),
                     Visible = true
-                };
-                EducationHelper.Settings.Path = @"d:\Dima\Google\EducationHelper\Spanish\questions.txt";
+                };               
             }
             else
             {
-                trayIcon = new NotifyIcon()
+                _trayIcon = new NotifyIcon()
                 {
                     Icon = new Icon("..\\..\\img\\italy_flag.ico"),
                     ContextMenu = new ContextMenu(new MenuItem[] {
@@ -37,11 +56,23 @@ namespace EducationHelper
                                                               }),
                     Visible = true
                 };
-                EducationHelper.Settings.Path = @"d:\Dima\Google\EducationHelper\Italian\questions.txt ";
-            }          
+            }
 
-            MyTimer.StartTimer();            
-        }       
+            SetPathToQuerstions();
+            MyTimer.StartTimer();
+        }
+
+        private void SetPathToQuerstions()
+        {
+            if (Mediator.Lang == Language.Spanish)
+            {
+                EducationHelper.Settings.Path = @"d:\Dima\Google\EducationHelper\Spanish\questions.txt";
+            }
+            else
+            {
+                EducationHelper.Settings.Path = @"d:\Dima\Google\EducationHelper\Italian\questions.txt ";
+            }
+        }
 
         void Settings(object sender, EventArgs e)
         {
@@ -52,7 +83,7 @@ namespace EducationHelper
         void Exit(object sender, EventArgs e)
         {
             // Hide tray icon, otherwise it will remain shown until user mouses over it
-            trayIcon.Visible = false;
+            _trayIcon.Visible = false;
             Application.Exit();
         }
     }

@@ -6,11 +6,14 @@ namespace EducationHelper
     public partial class FormSettings : Form
     {
         SettingsChanger _changer = new SettingsChanger();
+        static public event Action LanguageChanged; 
+
+
         public FormSettings()
         {
             InitializeComponent();
 
-            if (Mediator.Lang == Language.Spain)
+            if (Mediator.Lang == Language.Spanish)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconSpain;
             }
@@ -26,10 +29,9 @@ namespace EducationHelper
 
         void InitControls()
         {
-            textBox_path.Text = Settings.Path;
             numericUpDown_interval.Value = Settings.Interval/60000; // to minutes    
-            comboBox_language.Items.Add(Language.Spain);
-            comboBox_language.Items.Add(Language.Italy);
+            comboBox_language.Items.Add(Language.Spanish);
+            comboBox_language.Items.Add(Language.Italian);
             comboBox_language.SelectedIndex = 1;
         }
 
@@ -48,7 +50,6 @@ namespace EducationHelper
                     MessageBox.Show("Not correct values!");
                     return;
                 }
-                Settings.Path = textBox_path.Text;
                 Settings.Interval = (int)numericUpDown_interval.Value * 60000; //to milliseconds
                 _changer.IsIntervalChange();
                 this.Close();
@@ -66,10 +67,6 @@ namespace EducationHelper
                 using (var selectFileDialog = new OpenFileDialog())
                 {
                     selectFileDialog.Filter = "Text Files|*.txt;";
-                    if (selectFileDialog.ShowDialog() == DialogResult.OK)
-                    {
-                        textBox_path.Text = selectFileDialog.FileName;
-                    }
                 }
             }
             catch (Exception ex)
@@ -77,10 +74,14 @@ namespace EducationHelper
                 MessageBox.Show("Exception from button_select_Click method. " + ex.Message);
             }
         }
-
+        
         private void comboBox_language_SelectedIndexChanged(object sender, EventArgs e)
         {
             Mediator.Lang = (Language)comboBox_language.SelectedItem;
+            if (LanguageChanged != null)
+            {
+                LanguageChanged();
+            }
         }
     }
 }
