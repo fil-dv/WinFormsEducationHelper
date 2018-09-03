@@ -13,7 +13,7 @@ namespace EducationHelper
         {
             InitializeComponent();
 
-            if (Mediator.Lang == Language.Spanish)
+            if (Settings.Lang == Language.Spanish)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconSpain;
             }
@@ -77,7 +77,7 @@ namespace EducationHelper
         
         private void comboBox_language_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Mediator.Lang = (Language)comboBox_language.SelectedItem;
+            Settings.Lang = (Language)comboBox_language.SelectedItem;
             if (LanguageChanged != null)
             {
                 LanguageChanged();

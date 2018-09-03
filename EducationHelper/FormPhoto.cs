@@ -8,7 +8,7 @@ namespace EducationHelper
         public FormPhoto()
         {
             InitializeComponent();
-            if (Mediator.Lang == Language.Spanish)
+            if (Settings.Lang == Language.Spanish)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconSpain;
                 this.Text = "¡Hola!";
@@ -25,11 +25,11 @@ namespace EducationHelper
         {
             try
             {
-                if (Mediator.Path != null)
+                if (Settings.PathToAnswere != null)
                 {
-                    pictureBox_photo.ImageLocation = Mediator.Path;
+                    pictureBox_photo.ImageLocation = Settings.PathToAnswere;
                     pictureBox_photo.SizeMode = PictureBoxSizeMode.StretchImage;
-                    Mediator.Path = null;
+                    Settings.PathToAnswere = null;
                 }
             }
             catch (Exception ex)

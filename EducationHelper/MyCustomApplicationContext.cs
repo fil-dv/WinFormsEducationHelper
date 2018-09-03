@@ -10,7 +10,7 @@ namespace EducationHelper
        
         public MyCustomApplicationContext()
         {
-            Mediator.Lang = Language.Italian;             /////////////////////       set default language        ///////////////////            
+            EducationHelper.Settings.Lang = Language.Italian;             /////////////////////       set default language        ///////////////////            
             SetTrayIcon();
             FormSettings.LanguageChanged += FormSettings_LanguageChanged;       
         }
@@ -19,7 +19,7 @@ namespace EducationHelper
         {
             if (_trayIcon != null)
             {
-                if (Mediator.Lang == Language.Spanish)
+                if (EducationHelper.Settings.Lang == Language.Spanish)
                 {
                     _trayIcon.Icon = EducationHelper.Properties.Resources.IconSpain;
                 }
@@ -33,7 +33,7 @@ namespace EducationHelper
 
         private void SetTrayIcon()
         {
-            if (Mediator.Lang == Language.Spanish)
+            if (EducationHelper.Settings.Lang == Language.Spanish)
             {
                 _trayIcon = new NotifyIcon()
                 {
@@ -64,13 +64,13 @@ namespace EducationHelper
 
         private void SetPathToQuerstions()
         {
-            if (Mediator.Lang == Language.Spanish)
+            if (EducationHelper.Settings.Lang == Language.Spanish)
             {
-                EducationHelper.Settings.Path = @"d:\Dima\Google\EducationHelper\Spanish\questions.txt";
+                EducationHelper.Settings.PathToFile = @"Data\Spanish\questions.txt";
             }
             else
             {
-                EducationHelper.Settings.Path = @"d:\Dima\Google\EducationHelper\Italian\questions.txt ";
+                EducationHelper.Settings.PathToFile = @"Data\Italian\questions.txt ";
             }
         }
 

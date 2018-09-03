@@ -71,7 +71,6 @@
     <Compile Include="FormTask.Designer.cs">
       <DependentUpon>FormTask.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mediator.cs" />
     <Compile Include="MyCustomApplicationContext.cs" />
     <Compile Include="MyTimer.cs" />
     <Compile Include="Program.cs" />

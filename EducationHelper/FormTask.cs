@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
@@ -7,12 +9,14 @@ namespace EducationHelper
 {
     public partial class FormTask : Form
     {
+        private static readonly Random getrandom = new Random();
+
         String[] _taskArr = new string[2];
         public FormTask()
         {
             InitializeComponent();
 
-            if (Mediator.Lang == Language.Spanish)
+            if (Settings.Lang == Language.Spanish)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconSpain;
                 this.Text = "¡Hola!";
@@ -22,7 +26,6 @@ namespace EducationHelper
                 this.Icon = EducationHelper.Properties.Resources.IconItaly;
                 this.Text = "Ciao!";
             }
-
             InitTextBox();
         }
 
@@ -31,9 +34,10 @@ namespace EducationHelper
             try
             {
                 richTextBox_task.Text = "";
-                string taskStr = FileReader.ReadTask(EducationHelper.Settings.Path);
-                _taskArr = taskStr.Split('|');
-                richTextBox_task.AppendText(_taskArr[0]);
+                string[] strArr = File.ReadAllLines(EducationHelper.Settings.PathToFile, Encoding.Default);
+                string taskStr = GetRandonStr(strArr);
+                _taskArr = taskStr.Trim().Split('|');
+                richTextBox_task.AppendText("\n\n   " + _taskArr[0].Trim());
                 if (_taskArr.Length > 1)
                 {
                     button_show_answer.Visible = true;
@@ -43,6 +47,19 @@ namespace EducationHelper
             {
                 MessageBox.Show("InitTextBox Method exception. " + ex.Message);
             }            
+        }
+
+        private string GetRandonStr(string[] strArr)
+        {
+            return strArr[GetRandomNumber(0, strArr.Length -1)];
+        }
+
+        public static int GetRandomNumber(int min, int max)
+        {
+            lock (getrandom) // synchronize
+            {
+                return getrandom.Next(min, max);
+            }
         }
 
         private void button_task_ok_Click(object sender, EventArgs e)
@@ -62,7 +79,7 @@ namespace EducationHelper
                 }
                 else
                 {
-                    Mediator.Path = _taskArr[1].Trim();
+                    Settings.PathToAnswere = _taskArr[1].Trim();
                     FormPhoto fp = new FormPhoto();
                     fp.Owner = this;
                     this.Hide();
@@ -75,7 +92,7 @@ namespace EducationHelper
         {            
             //string regex = @"([a-z]:\)";
             //if (Regex.IsMatch(_taskArr[1].Trim(), @"/[a-z]:\/"))
-            if(_taskArr[1].Contains(@":\"))
+            if(_taskArr[1].Contains(@"\"))
             {
                 return true;
             }
