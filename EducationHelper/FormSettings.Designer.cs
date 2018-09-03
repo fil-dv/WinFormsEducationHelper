@@ -41,7 +41,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 48);
+            this.label2.Location = new System.Drawing.Point(12, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 3;
@@ -49,7 +49,7 @@
             // 
             // numericUpDown_interval
             // 
-            this.numericUpDown_interval.Location = new System.Drawing.Point(87, 46);
+            this.numericUpDown_interval.Location = new System.Drawing.Point(88, 32);
             this.numericUpDown_interval.Maximum = new decimal(new int[] {
             360,
             0,
@@ -71,7 +71,7 @@
             // 
             // button_settings_ok
             // 
-            this.button_settings_ok.Location = new System.Drawing.Point(115, 124);
+            this.button_settings_ok.Location = new System.Drawing.Point(116, 110);
             this.button_settings_ok.Name = "button_settings_ok";
             this.button_settings_ok.Size = new System.Drawing.Size(75, 23);
             this.button_settings_ok.TabIndex = 5;
@@ -81,7 +81,7 @@
             // 
             // button_settings_cancel
             // 
-            this.button_settings_cancel.Location = new System.Drawing.Point(34, 124);
+            this.button_settings_cancel.Location = new System.Drawing.Point(13, 110);
             this.button_settings_cancel.Name = "button_settings_cancel";
             this.button_settings_cancel.Size = new System.Drawing.Size(75, 23);
             this.button_settings_cancel.TabIndex = 6;
@@ -92,7 +92,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 81);
+            this.label3.Location = new System.Drawing.Point(13, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 8;
@@ -101,7 +101,7 @@
             // comboBox_language
             // 
             this.comboBox_language.FormattingEnabled = true;
-            this.comboBox_language.Location = new System.Drawing.Point(87, 78);
+            this.comboBox_language.Location = new System.Drawing.Point(88, 64);
             this.comboBox_language.Name = "comboBox_language";
             this.comboBox_language.Size = new System.Drawing.Size(106, 21);
             this.comboBox_language.TabIndex = 9;
@@ -111,7 +111,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(224, 181);
+            this.ClientSize = new System.Drawing.Size(206, 161);
             this.Controls.Add(this.comboBox_language);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button_settings_cancel);
