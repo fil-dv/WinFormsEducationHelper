@@ -1,0 +1,222 @@
+﻿ 8, 10, 9, 11, 4, 1, 12  | ocho, diez, nueve, once, cuatro, uno, doce 
+ 3, 5, 20, 7, 15, 18, 100, 200 | tres, cinco, veinte, siete, quince, diesiocho, cien, doscientos 
+ Проспрягайте глагол Ir (идти) 
+ Проспрягайте глагол estar (быть) 
+ Проспрягайте глагол estudiar (изучать; учиться) 
+ Проспрягайте глагол existir (существовать) 
+ Проспрягайте глагол explicar (объяснять) 
+ Проспрягайте глагол ganar (зарабатывать; выиграть) 
+ Проспрягайте глагол gustar (нравиться) 
+ Проспрягайте глагол hablar (разговаривать) 
+ Проспрягайте глагол jugar (играть) 
+ Проспрягайте глагол leer (читать) 
+ Проспрягайте глагол llamar (звать) 
+ Я видел её вчера. Но она не видела меня. Она видела меня сегодня у меня дома. | La vi ayer. Pero ella no me vio. Ella me vio hoy en mi casa. 
+ Они собираются завтра отдохнуть. Когда я буду отдыхать? | Ellos van a descansar mañana. ¿Cuándo descansaré? 
+ Местоимения, отвечающие на вопрос "кого?" Меня, тебя, его, её, нас, вас, их.  | Data\Spanish\Images\местоимения_кого.jpg 
+ Каждый день, каждый год, каждый человек | Data\Spanish\Images\cada.jpg 
+ Ясный, светлый, конечно | Data\Spanish\Images\claro.jpg 
+ Конечно да! Конечно нет! Светлый день. | Data\Spanish\Images\claro_plus.jpg 
+ Конечно, а то... | Data\Spanish\Images\claro_plus_+.jpg 
+ Та же самая, тот же самый | Data\Spanish\Images\la_misma.jpg 
+ Cмотри! Слушай! | Data\Spanish\Images\mira!_Oye!.jpg 
+ Быть, идти, иметь (в настоящем и прошлом) | Data\Spanish\Images\ser_ir_tener.jpg 
+ Брать, кушать, жить (в настоящем и прошлом) | Data\Spanish\Images\standart.jpg 
+ всё, кое-что, ничего. Все, кое-кто, никто. Всегда, иногда, никогда. Везде, где-то, нигде. | Data\Spanish\Images\todo_algo_nada.jpg 
+ Я боюсь иметь тебя а потом потерять. | Data\Spanish\Images\бесамемучо строчка.jpg 
+ Быть, идти (проспрягать в прошедшем) | Data\Spanish\Images\быть, идти (прошедшее).jpg 
+ Есть, пить, готовить, заказывать, платить. | Data\Spanish\Images\глаголы о еде.jpg 
+ глагол "делать"  |   Data\Spanish\Images\делать(прошедшее).jpg 
+ другой | Data\Spanish\Images\другой.jpg 
+ Морепродукты, мясо, рыба, хлеб | Data\Spanish\Images\еда.jpg 
+ Завтракать, обедать, ужинать | Data\Spanish\Images\завтракать.jpg 
+ "Иметь" (проспрягать в прошедшем) | Data\Spanish\Images\Иметь (в прошедшем).jpg 
+ Кофе или чай? С молоком или без? С газом? Без газа? | Data\Spanish\Images\кофе или чай.jpg 
+ Мясо, прощай! | Data\Spanish\Images\мясо, карнавал.jpg 
+ Мясо с кровью. |   Data\Spanish\Images\мясо_с_кровью.jpg 
+ Ноги, ступни. | Data\Spanish\Images\ноги.jpg 
+ Местоимения (я, ты, он...)  | Data\Spanish\Images\я, ты и тд..jpg 
+ Трудно, легко, труднее, легче. | Data\Spanish\Images\трудно, легко.jpg 
+ Местоимения (кому?) | Data\Spanish\Images\мне, тебе и тд (кому).jpg 
+ Местоимения (чей?) | Data\Spanish\Images\мой, твой и тд (чей).jpg 
+ Гаспаччо, паэлья, тортилья, хамон | Data\Spanish\Images\названия блюд.jpg 
+ Пиво. | Data\Spanish\Images\пиво.jpg 
+ Терять, искать, находить. | Data\Spanish\Images\терять.jpg 
+ Приятного аппетита! | Data\Spanish\Images\Приятного аппетита.jpg 
+ Право, лево. |  Data\Spanish\Images\право-лево.jpg 
+ "Сказать" (проспрягать в прошедшем) | Data\Spanish\Images\Сказать (прошедшее).jpg 
+ Опасность, опасно, это опасно. | Data\Spanish\Images\опасность,опасно.jpg 
+ Ювелирные украшения. | Data\Spanish\Images\ювелирные украшения.jpg 
+ Быть, иметь, идти, говорить, делать. | Data\Spanish\Images\не пр глаголы.jpg 
+ я теряю, я закрываю | Data\Spanish\Images\e-ie.jpg 
+ нью йорк | Data\Spanish\Images\new york.jpg 
+ Я возвращаюсь, я играю, я могу |  Data\Spanish\Images\o-ue.jpg  
+ берег моря | Data\Spanish\Images\берег моря.jpg 
+ в другой раз | Data\Spanish\Images\в другой раз.jpg 
+ вежливо, не вежливо |  Data\Spanish\Images\вежливо.jpg  
+ восточный, западний | Data\Spanish\Images\восточный.jpg  
+ вперед, назад | Data\Spanish\Images\вперед, назад.jpg 
+ Германиия |  Data\Spanish\Images\германия.jpg  
+ город и вместе | Data\Spanish\Images\город и вместе.jpg 
+ дружба |  Data\Spanish\Images\дружба.jpg  
+ Четыре года назад я ездил в Англию | Data\Spanish\Images\ездил в англию.jpg 
+ Если нам чего-то не хватает | Data\Spanish\Images\если нам.jpg 
+ женатый, замужняя | Data\Spanish\Images\женатый,замужняя.jpg  
+ золото, серебро | Data\Spanish\Images\золото,серебро.jpg  
+ играть на пианино | Data\Spanish\Images\играть на пианино.jpg 
+ идите с богом | Data\Spanish\Images\идите с богом.jpg 
+ как пройти к... | Data\Spanish\Images\Как пройти.jpg 
+ красивый |   Data\Spanish\Images\красивый.jpg  
+ лететь на самолете | Data\Spanish\Images\лететь.jpg  
+ Единый народ никогда не будет побежден! | Data\Spanish\Images\лозунг.jpg  
+ Люди сошли с ума? | Data\Spanish\Images\люди сошли с ума.jpg 
+ Мне нравится смотреть, как другие говорят. | Data\Spanish\Images\мне нравится смотреть.jpg 
+ email |  Data\Spanish\Images\мыло.jpg  
+ народный | Data\Spanish\Images\народный.jpg  
+ помнить, не помню | Data\Spanish\Images\помнить.jpg  
+ я потерялся, помогите мне | Data\Spanish\Images\потерялся.jpg  
+ слово, мне не хватает слов. | Data\Spanish\Images\слово.jpg  
+ стороны света | Data\Spanish\Images\стороны света.jpg 
+ счастливого пути | Data\Spanish\Images\Счастливого пути.jpg 
+ включен, выключен | Data\Spanish\Images\вкл.jpg  
+ счет, чаевые | Data\Spanish\Images\счет, чаевые.jpg 
+ тоже да, тоже нет | Data\Spanish\Images\тоже да, нет.jpg 
+ США |  Data\Spanish\Images\сша.jpg  
+ У нас уже много слов | Data\Spanish\Images\у нас много слов.jpg 
+ Удача, удачи! | Data\Spanish\Images\удача.jpg  
+ Черное платье для моей внучки | Data\Spanish\Images\Черное платье для моей внучки.jpg 
+ Чувствовать | Data\Spanish\Images\чувствовать.jpg  
+ Язык | Data\Spanish\Images\язык.jpg  
+ Это лучший способ. | Data\Spanish\Images\Это лучший способ.jpg  
+ Знать (проспрягать в настоящем) | Data\Spanish\Images\saber_знать.jpg  
+ Артикли | Data\Spanish\Images\артикли.jpg  
+ Семья | Data\Spanish\Images\семья.jpg  
+ Писать | Data\Spanish\Images\писать.jpg  
+ Счет до 10 | Data\Spanish\Images\до10.jpg  
+ Быть простпрягать в настоящем времени | Data\Spanish\Images\быть.jpg  
+ Большой, маленький | Data\Spanish\Images\большой_маленький.jpg  
+ Вопросительные слова | Data\Spanish\Images\вопросительные слова.jpg 
+ Который Час? Час дня, пол третьего и т.д. | Data\Spanish\Images\время.jpg  
+ Все в порядке. | Data\Spanish\Images\всё_норм.jpg  
+ Знать (проспрягать в прошедшем) | Data\Spanish\Images\знать(в_прошедшем).jpg  
+ Забывать | Data\Spanish\Images\забывать.jpg  
+ Интересовать | Data\Spanish\Images\интересовать.jpg  
+ Который час | Data\Spanish\Images\который_час.jpg  
+ Кошка, собака | Data\Spanish\Images\кошачки_бучка.jpg 
+ уменьшительно-ласкательные | Data\Spanish\Images\уменьшительно-ласкательные.jpg  
+ Члены семьи | Data\Spanish\Images\существительные_семья.jpg  
+ Сейчас, достаточно, тоже | Data\Spanish\Images\сейчас.jpg  
+ Иметь (проспрягать в настоящем) | Data\Spanish\Images\иметь.jpg  
+ Сравнивать | Data\Spanish\Images\сравнивать.jpg  
+ у меня много друзей | Data\Spanish\Images\у_меня_много_друзей.jpg  
+ Куда ты идешь? | Data\Spanish\Images\куда_ты_идешь.jpg  
+ Как вы поживаете? | Data\Spanish\Images\как_вы_поживаете.jpg  
+ Как ты? | Data\Spanish\Images\как_ты.jpg  
+ Она мне понравилась. | Data\Spanish\Images\она_мне_понравилась.jpg  
+ У меня нет времени. | Data\Spanish\Images\у_меня_нет_времени.jpg  
+ Я буду танцевать. Мы будем есть. | Data\Spanish\Images\мы_покушаем.jpg  
+ Понимать, покупать. | Data\Spanish\Images\понимать,покупать.jpg  
+ Сын, дочь, дети. | Data\Spanish\Images\сын_дочь_дети.jpg 
+ Цвета | Data\Spanish\Images\цвета.jpg 
+ Ты ошибаешься | Data\Spanish\Images\ты_ошибаешься.jpg 
+ Через 3 дня | Data\Spanish\Images\через_3_дня.jpg  
+ Как читать G | Data\Spanish\Images\как_читать_G.jpg 
+ Сделайте_одолжение | Data\Spanish\Images\Сделайте_одолжение.jpg 
+ Я хочу посетить | Data\Spanish\Images\я_хочу_посетить.jpg 
+ Я здесь никого не знаю | Data\Spanish\Images\я_здесь_никого_не_знаю.jpg 
+ 1-е мая | Data\Spanish\Images\1-е_мая.jpg 
+ 2-е мая | Data\Spanish\Images\2-е_мая.jpg  
+ 35 | Data\Spanish\Images\35.jpg  
+ Миллион | Data\Spanish\Images\1000000.jpg  
+ Как я могу тебе помочь? | Data\Spanish\Images\Как_я_могу_тебе_помоч.jpg 
+ Ты знаешь кого-нибудь, кто может нам помочь? | Data\Spanish\Images\Ты_знаешь_кого-нибудь.jpg 
+ Большой - маленький, высокий-низкий, хороший-плохой, высокий-низкий | Data\Spanish\Images\прилагательные.jpg 
+ Я должен подумать | Data\Spanish\Images\я_должен_подумать.jpg  
+ Тысяча | Data\Spanish\Images\1000.jpg  
+ 13-20 | Data\Spanish\Images\13_20.jpg   
+ Делать (в настоящем) | Data\Spanish\Images\делать.jpg   
+ 500 | Data\Spanish\Images\500.jpg  
+ День рождения | Data\Spanish\Images\ДР.jpg   
+ Час,сейчас | Data\Spanish\Images\час,сейчас.jpg  
+ 40,50...100 | Data\Spanish\Images\40,50...100.jpg   
+ месяц | Data\Spanish\Images\месяц.jpg  
+ неделя | Data\Spanish\Images\неделя.jpg   
+ мать, отец | Data\Spanish\Images\мать_отец.jpg  
+ мужчина | Data\Spanish\Images\мужчина.jpg   
+ брат,сестра | Data\Spanish\Images\брат,сестра.jpg  
+ муж, жена | Data\Spanish\Images\муж,жена.jpg   
+ потом, до свидания | Data\Spanish\Images\потом,до_свидания.jpg  
+ Дни недели | Data\Spanish\Images\дни_недели.jpg   
+ месяцы | Data\Spanish\Images\месяцы.jpg  
+ мой ДР 8-го июля | Data\Spanish\Images\мой_ДР.jpg   
+ времена года | Data\Spanish\Images\времена_года.jpg  
+ век | Data\Spanish\Images\век.jpg   
+ информация, продукция, медитация... | Data\Spanish\Images\куча_слов.jpg  
+ Потом. | Data\Spanish\Images\потом.jpg  
+ В понедельник я ходил в кино. | Data\Spanish\Images\в_понедельник_я_ходил_в_кино.jpg  
+ Хочу, люблю | Data\Spanish\Images\хочу_люблю.jpg   
+ почему? Потому что! | Data\Spanish\Images\почему_потомуЧто.jpg  
+ В январе, в феврале, в мае. | Data\Spanish\Images\в_январе.jpg   
+ Почему он ничего не делает? | Data\Spanish\Images\почему_он_ничего_не_делает.jpg  
+ Что ты сейчас делаешь? | Data\Spanish\Images\что_ты_сейчас_делаешь.jpg  
+ хотеть (в прошедшем) | Data\Spanish\Images\хотеть (в прошедшем).jpg 
+ апельсин_оранжевый | Data\Spanish\Images\апельсин_оранжевый.jpg 
+ белое, красное вино | Data\Spanish\Images\белое_красное_вино.jpg 
+ блондин, брюнет | Data\Spanish\Images\блондин_брюнет.jpg  
+ быть согласным | Data\Spanish\Images\быть_согласным.jpg  
+ Высокий хороший плохой (сравнительные степени) | Data\Spanish\Images\Высокий_хороший_плохой_(сравнительные_степени).jpg  
+ небо, голубой | Data\Spanish\Images\небо_голубой.jpg  
+ согласен с тобой | Data\Spanish\Images\согласен_с_тобой.jpg  
+ среднего_роста | Data\Spanish\Images\среднего_роста.jpg  
+ цветы, цвет | Data\Spanish\Images\цветы_цвет.jpg  
+ черные глаза | Data\Spanish\Images\черные_глаза.jpg  
+ В общем | Data\Spanish\Images\В_общем.jpg   
+ выбирать | Data\Spanish\Images\выбирать.jpg   
+ Где ты купил свою рубашку | Data\Spanish\Images\Где_ты_купил_свою_рубашку.jpg   
+ голос, который успокаивает | Data\Spanish\Images\голос,_который_успокаивает.jpg   
+ Длинные пальцы, чтоб играть на пианино | Data\Spanish\Images\Длинные_пальцы,_чтоб_играть_на_пианино.jpg   
+ Для молодых это хорошо | Data\Spanish\Images\Для_молодых_это_хорошо.jpg   
+ её волосы ни длинные ни короткие | Data\Spanish\Images\её_волосы_ни_длинные_ни_короткие.jpg   
+ Как сказать по испански? | Data\Spanish\Images\Как_сказать_по_испански.jpg   
+ какая нужно | Data\Spanish\Images\какая_нужно.jpg   
+ кудрявые волосы | Data\Spanish\Images\кудрявые_волосы.jpg   
+ между нами | Data\Spanish\Images\между_нами.jpg   
+ Между рыжим и каштановым | Data\Spanish\Images\Между_рыжим_и_каштановым.jpg   
+ мне очень подходит | Data\Spanish\Images\мне_очень_подходит.jpg   
+ Мне (тебе, ему) идёт | Data\Spanish\Images\Мне_тебе_ему_идёт.jpg   
+ Молоденький, новенький | Data\Spanish\Images\Молоденький,_новенький.jpg   
+ Надежда | Data\Spanish\Images\Надежда.jpg   
+ Надеяться, ждать | Data\Spanish\Images\Надеяться_ждать.jpg   
+ новый, молодой | Data\Spanish\Images\новый_молодой.jpg   
+ Об этом можно поспорить | Data\Spanish\Images\Об_этом_можно_поспорить.jpg   
+ пальцы | Data\Spanish\Images\пальцы.jpg   
+ писать, описывать | Data\Spanish\Images\писать_описывать.jpg   
+ Покупать_продавать, выбирать, носить(одежда). | Data\Spanish\Images\Покупать_продавать, выбирать, носить(одежда).jpg   
+ правда | Data\Spanish\Images\правда.jpg   
+ Рисунок, узор. | Data\Spanish\Images\Рисунок_узор.jpg   
+ руки, ладони | Data\Spanish\Images\руки_ладони.jpg   
+ светлый, темный | Data\Spanish\Images\светлый_темный.jpg   
+ спокойный, успакаивать. | Data\Spanish\Images\спокойный_успакаивать.jpg   
+ стыд, стыдиться | Data\Spanish\Images\стыд_стыдиться.jpg   
+ уже, еще | Data\Spanish\Images\уже_еще.jpg   
+ улыбка | Data\Spanish\Images\улыбка.jpg   
+ элементы одежды | Data\Spanish\Images\элементы_одежды.jpg   
+ Я надеюсь, что мы уже знаем много | Data\Spanish\Images\Я_надеюсь,_что_мы_уже_знаем_много.jpg   
+ Я тебя жду. Я надеюсь. | Data\Spanish\Images\Я_тебя_жду._Я_надеюсь..jpg   
+ анекдот | Data\Spanish\Images\анекдот.jpg  
+ выбирать, кушать, еда | Data\Spanish\Images\выбирать,_кушать,_еда.jpg  
+ Если нам нравится еда | Data\Spanish\Images\Если_нам_нравится_еда.jpg  
+ есть - еда, пить - напиток | Data\Spanish\Images\есть_еда_пить_напиток.jpg  
+ За здоровье | Data\Spanish\Images\За_здоровье.jpg 
+ завтрак, обед, ужин | Data\Spanish\Images\завтрак_обед_ужин.jpg  
+ и так далее | Data\Spanish\Images\и_так_далее.jpg  
+ любимый, дорогой(человек) | Data\Spanish\Images\любимый_дорогой(человек).jpg  
+ любимый, предпочитаемый | Data\Spanish\Images\любимый_предпочитаемый.jpg  
+ груз, жалоба, умный | Data\Spanish\Images\Паха.jpg  
+ семейное положение | Data\Spanish\Images\семейное положение.jpg 
+ такова жизнь | Data\Spanish\Images\такова_жизнь.jpg  
+ то, что | Data\Spanish\Images\то,_что.jpg   
+ холодно, тепло | Data\Spanish\Images\холодно_тепло.jpg  
+ я хотел бы | Data\Spanish\Images\я_хотел_бы.jpg  
+ часто, обычно | Data\Spanish\Images\часто_обычно.jpg  
+ часто, редко, редкий | Data\Spanish\Images\часто_редко.jpg  

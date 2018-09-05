@@ -34,7 +34,7 @@ namespace EducationHelper
             try
             {
                 richTextBox_task.Text = "";
-                string[] strArr = File.ReadAllLines(EducationHelper.Settings.PathToFile, Encoding.Default);
+                string[] strArr = File.ReadAllLines(EducationHelper.Settings.PathToFile, Encoding.UTF8);
                 string taskStr = GetRandonStr(strArr);
                 _taskArr = taskStr.Trim().Split('|');
                 richTextBox_task.AppendText("\n\n   " + _taskArr[0].Trim());

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace EducationHelper
@@ -82,6 +84,46 @@ namespace EducationHelper
             {
                 LanguageChanged();
             }
+        }
+
+        private void button_load_Click(object sender, EventArgs e)
+        {
+            using (var fbd = new FolderBrowserDialog())
+            {
+                DialogResult result = fbd.ShowDialog();
+
+                if (result == System.Windows.Forms.DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
+                {
+                    DirectoryInfo di = new DirectoryInfo(fbd.SelectedPath);
+                    FileInfo[] list = di.GetFiles();
+                    string destDir = Path.Combine("Data", Settings.Lang == Language.Italian ? "Italian" : "Spain", "Images");
+                    foreach (var item in list)
+                    {
+                        string destPath = Path.Combine(destDir, item.Name);
+                        File.Copy(item.FullName, destPath, true);
+                    }
+                    CreateListToRecord(list, destDir);                    
+                }
+            }
+        }
+
+        private void CreateListToRecord(FileInfo[] list, string pathToDir)
+        {
+            List<string> strList = new List<string>();
+            foreach (var item in list)
+            {
+                string str = Path.GetFileNameWithoutExtension(item.FullName) + " | " + Path.Combine(pathToDir, item.Name);
+                strList.Add(str);
+            }
+            RecToTxt(strList, pathToDir);            
+        }
+
+        private void RecToTxt(List<string> strList, string pathToDir)
+        {
+            string pathToTxtDir = pathToDir.Substring(0, pathToDir.LastIndexOf("\\"));
+            string pathToTxt = Path.Combine(pathToTxtDir, "questions.txt");
+            File.WriteAllText(pathToTxt, "");
+            File.AppendAllLines(pathToTxt, strList, System.Text.Encoding.UTF8);            
         }
     }
 }
