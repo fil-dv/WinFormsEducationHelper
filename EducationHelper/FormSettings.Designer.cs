@@ -133,7 +133,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSettings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Settings";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_interval)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

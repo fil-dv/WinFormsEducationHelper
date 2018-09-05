@@ -112,7 +112,9 @@ namespace EducationHelper
             List<string> strList = new List<string>();
             foreach (var item in list)
             {
-                string str = Path.GetFileNameWithoutExtension(item.FullName) + " | " + Path.Combine(pathToDir, item.Name);
+                string question = Path.GetFileNameWithoutExtension(item.FullName);
+                if (question.Contains("_")) question = question.Replace("_", " ");
+                string str = question + " | " + Path.Combine(pathToDir, item.Name);
                 strList.Add(str);
             }
             RecToTxt(strList, pathToDir);            

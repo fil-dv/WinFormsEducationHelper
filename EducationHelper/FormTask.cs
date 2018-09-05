@@ -90,8 +90,6 @@ namespace EducationHelper
 
         bool IsItPhoto()
         {            
-            //string regex = @"([a-z]:\)";
-            //if (Regex.IsMatch(_taskArr[1].Trim(), @"/[a-z]:\/"))
             if(_taskArr[1].Contains(@"\"))
             {
                 return true;
