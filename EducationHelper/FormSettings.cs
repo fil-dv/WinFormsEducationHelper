@@ -125,7 +125,8 @@ namespace EducationHelper
             string pathToTxtDir = pathToDir.Substring(0, pathToDir.LastIndexOf("\\"));
             string pathToTxt = Path.Combine(pathToTxtDir, "questions.txt");
             File.WriteAllText(pathToTxt, "");
-            File.AppendAllLines(pathToTxt, strList, System.Text.Encoding.UTF8);            
+            File.AppendAllLines(pathToTxt, strList, System.Text.Encoding.UTF8);
+            MessageBox.Show("Questions list updated. (" + strList.Count + ")", Settings.Lang.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
