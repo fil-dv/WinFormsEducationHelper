@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace EducationHelper
@@ -22,8 +23,7 @@ namespace EducationHelper
             else
             {
                 this.Icon = EducationHelper.Properties.Resources.IconItaly;
-            }
-            
+            }            
 
             InitControls();
             _changer.OldInterval = Settings.Interval;
@@ -34,7 +34,19 @@ namespace EducationHelper
             numericUpDown_interval.Value = Settings.Interval/60000; // to minutes    
             comboBox_language.Items.Add(Language.Spanish);
             comboBox_language.Items.Add(Language.Italian);
-            comboBox_language.SelectedIndex = 1;
+
+            switch (EducationHelper.Settings.Lang)
+            {
+                case Language.Spanish:
+                    comboBox_language.SelectedIndex = 0;
+                    break;
+                case Language.Italian:
+                    comboBox_language.SelectedIndex = 1;
+                    break;
+                default:
+                    comboBox_language.SelectedIndex = 0;
+                    break;
+            }
         }
 
         private void button_settings_cancel_Click(object sender, EventArgs e)
@@ -53,6 +65,7 @@ namespace EducationHelper
                     return;
                 }
                 Settings.Interval = (int)numericUpDown_interval.Value * 60000; //to milliseconds
+                WriteSettingsToFile(Settings.Lang.ToString(), numericUpDown_interval.Value);
                 _changer.IsIntervalChange();
                 this.Close();
             }
@@ -60,6 +73,16 @@ namespace EducationHelper
             {
                 MessageBox.Show("Exception from FormSettings. Method button_settings_ok_Click. " + ex.Message);
             }            
+        }
+
+        private void WriteSettingsToFile(string language, decimal interval)
+        {
+            if (!File.Exists("settings.txt"))
+            {
+                File.Create("settings.txt").Close();                
+            }
+            string settings = language + ":" + interval.ToString();
+            File.WriteAllText("settings.txt", settings, Encoding.Default);
         }
 
         private void button_select_Click(object sender, EventArgs e)

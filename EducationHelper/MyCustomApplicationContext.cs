@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace EducationHelper
@@ -10,10 +12,56 @@ namespace EducationHelper
        
         public MyCustomApplicationContext()
         {
-            EducationHelper.Settings.Lang = Language.Italian;             /////////////////////       set default language        ///////////////////            
-            SetTrayIcon();
-            FormSettings.LanguageChanged += FormSettings_LanguageChanged;       
+            try
+            {
+                string settings = ReadLangSettingsFile();
+                string[] arr = settings.Split(new char[] { ':' });
+
+                switch (arr[0])  // set language 
+                {
+                    case "Spanish":
+                        EducationHelper.Settings.Lang = Language.Spanish;
+                        break;
+                    case "Italian":
+                        EducationHelper.Settings.Lang = Language.Italian;
+                        break;
+                    default:
+                        EducationHelper.Settings.Lang = Language.Spanish;
+                        break;
+                }
+
+                int interval = Convert.ToInt32(arr[1]);
+                EducationHelper.Settings.Interval = interval * 60 * 1000;   // set interval in minutes
+
+                SetTrayIcon();
+                FormSettings.LanguageChanged += FormSettings_LanguageChanged;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception from MyCustomApplicationContext(). " + ex.Message);
+            }            
         }
+
+        private string ReadLangSettingsFile()
+        {            
+            string str = "";
+
+            try
+            {
+                if (!File.Exists("settings.txt"))
+                {
+                    File.Create("settings.txt").Close();
+                    File.WriteAllText("settings.txt", "Spanish:61", Encoding.Default);
+                }
+                str = File.ReadAllText("settings.txt");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Exception from ReadLangSettingsFile(). " + ex.Message);
+            }
+            return str;
+        }
+
 
         private void FormSettings_LanguageChanged()
         {
