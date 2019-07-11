@@ -20,10 +20,14 @@ namespace EducationHelper
             {
                 this.Icon = EducationHelper.Properties.Resources.IconSpain;
             }
-            else
+            else if (Settings.Lang == Language.Italian)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconItaly;
-            }            
+            }
+            else
+            {
+                this.Icon = EducationHelper.Properties.Resources.IconEnglish;
+            }
 
             InitControls();
             _changer.OldInterval = Settings.Interval;
@@ -34,6 +38,7 @@ namespace EducationHelper
             numericUpDown_interval.Value = Settings.Interval/60000; // to minutes    
             comboBox_language.Items.Add(Language.Spanish);
             comboBox_language.Items.Add(Language.Italian);
+            comboBox_language.Items.Add(Language.English);
 
             switch (EducationHelper.Settings.Lang)
             {
@@ -42,6 +47,9 @@ namespace EducationHelper
                     break;
                 case Language.Italian:
                     comboBox_language.SelectedIndex = 1;
+                    break;
+                case Language.English:
+                    comboBox_language.SelectedIndex = 2;
                     break;
                 default:
                     comboBox_language.SelectedIndex = 0;

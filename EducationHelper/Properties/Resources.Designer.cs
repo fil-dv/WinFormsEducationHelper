@@ -63,6 +63,16 @@ namespace EducationHelper.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        internal static System.Drawing.Icon IconEnglish {
+            get {
+                object obj = ResourceManager.GetObject("IconEnglish", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         internal static System.Drawing.Icon IconItaly {
             get {
                 object obj = ResourceManager.GetObject("IconItaly", resourceCulture);

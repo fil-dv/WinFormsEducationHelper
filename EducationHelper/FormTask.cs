@@ -21,10 +21,15 @@ namespace EducationHelper
                 this.Icon = EducationHelper.Properties.Resources.IconSpain;
                 this.Text = "¡Hola!";
             }
-            else
+            else if (Settings.Lang == Language.Italian)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconItaly;
                 this.Text = "Ciao!";
+            }
+            else
+            {
+                this.Icon = EducationHelper.Properties.Resources.IconEnglish;
+                this.Text = "Hi!";
             }
             InitTextBox();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace EducationHelper
 {
-    public enum Language { Spanish, Italian }
+    public enum Language { Spanish, Italian, English }
 
     public static class Settings
     {
