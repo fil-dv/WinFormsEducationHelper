@@ -25,6 +25,9 @@ namespace EducationHelper
                     case "Italian":
                         EducationHelper.Settings.Lang = Language.Italian;
                         break;
+                    case "English":
+                        EducationHelper.Settings.Lang = Language.English;
+                        break;
                     default:
                         EducationHelper.Settings.Lang = Language.Spanish;
                         break;
@@ -71,9 +74,13 @@ namespace EducationHelper
                 {
                     _trayIcon.Icon = EducationHelper.Properties.Resources.IconSpain;
                 }
-                else
+                else if (EducationHelper.Settings.Lang == Language.Italian)
                 {
                     _trayIcon.Icon = EducationHelper.Properties.Resources.IconItaly;
+                }
+                else
+                {
+                    _trayIcon.Icon = EducationHelper.Properties.Resources.IconEnglish;
                 }
                 SetPathToQuerstions();
             }           
@@ -91,13 +98,25 @@ namespace EducationHelper
                                                     new MenuItem("Exit", Exit)
                                                               }),
                     Visible = true
-                };               
+                };
+            }
+            else if (EducationHelper.Settings.Lang == Language.Italian)
+            {
+                _trayIcon = new NotifyIcon()
+                {
+                    Icon = new Icon("..\\..\\img\\italy_flag.ico"),
+                    ContextMenu = new ContextMenu(new MenuItem[] {
+                                                    new MenuItem("Settings", Settings),
+                                                    new MenuItem("Exit", Exit)
+                                                              }),
+                    Visible = true
+                };
             }
             else
             {
                 _trayIcon = new NotifyIcon()
                 {
-                    Icon = new Icon("..\\..\\img\\italy_flag.ico"),
+                    Icon = new Icon("..\\..\\img\\english_flag.ico"),
                     ContextMenu = new ContextMenu(new MenuItem[] {
                                                     new MenuItem("Settings", Settings),
                                                     new MenuItem("Exit", Exit)
@@ -116,9 +135,13 @@ namespace EducationHelper
             {
                 EducationHelper.Settings.PathToFile = @"Data\Spanish\questions.txt";
             }
-            else
+            else if (EducationHelper.Settings.Lang == Language.Italian)
             {
                 EducationHelper.Settings.PathToFile = @"Data\Italian\questions.txt ";
+            }
+            else
+            {
+                EducationHelper.Settings.PathToFile = @"Data\English\questions.txt ";
             }
         }
 
