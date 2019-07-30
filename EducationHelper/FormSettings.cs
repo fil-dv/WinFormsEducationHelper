@@ -85,12 +85,12 @@ namespace EducationHelper
 
         private void WriteSettingsToFile(string language, decimal interval)
         {
-            if (!File.Exists("settings.txt"))
+            if (!File.Exists("Data\\settings.txt"))
             {
-                File.Create("settings.txt").Close();                
+                File.Create("Data\\settings.txt").Close();                
             }
             string settings = language + ":" + interval.ToString();
-            File.WriteAllText("settings.txt", settings, Encoding.Default);
+            File.WriteAllText("Data\\settings.txt", settings, Encoding.Default);
         }
 
         private void button_select_Click(object sender, EventArgs e)

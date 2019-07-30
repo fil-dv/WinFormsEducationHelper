@@ -51,12 +51,12 @@ namespace EducationHelper
 
             try
             {
-                if (!File.Exists("settings.txt"))
+                if (!File.Exists("Data\\settings.txt"))
                 {
-                    File.Create("settings.txt").Close();
-                    File.WriteAllText("settings.txt", "Spanish:61", Encoding.Default);
+                    File.Create("Data\\settings.txt").Close();
+                    File.WriteAllText("Data\\settings.txt", "English:21", Encoding.Default);
                 }
-                str = File.ReadAllText("settings.txt");
+                str = File.ReadAllText("Data\\settings.txt");
             }
             catch (Exception ex)
             {
@@ -92,7 +92,8 @@ namespace EducationHelper
             {
                 _trayIcon = new NotifyIcon()
                 {
-                    Icon = new Icon("..\\..\\img\\spain_flag.ico"),
+                    //Icon = new Icon("..\\..\\img\\spain_flag.ico"),
+                    Icon = new Icon(Properties.Resources.IconSpain, 16, 16),
                     ContextMenu = new ContextMenu(new MenuItem[] {
                                                     new MenuItem("Settings", Settings),
                                                     new MenuItem("Exit", Exit)
@@ -104,7 +105,8 @@ namespace EducationHelper
             {
                 _trayIcon = new NotifyIcon()
                 {
-                    Icon = new Icon("..\\..\\img\\italy_flag.ico"),
+                    //Icon = new Icon("..\\..\\img\\italy_flag.ico"),
+                    Icon = new Icon(Properties.Resources.IconItaly, 16, 16),
                     ContextMenu = new ContextMenu(new MenuItem[] {
                                                     new MenuItem("Settings", Settings),
                                                     new MenuItem("Exit", Exit)
@@ -116,7 +118,9 @@ namespace EducationHelper
             {
                 _trayIcon = new NotifyIcon()
                 {
-                    Icon = new Icon("..\\..\\img\\english_flag.ico"),
+                    //Icon = new Icon("..\\..\\img\\english_flag.ico"),
+                    Icon = new Icon(Properties.Resources.IconEnglish, 16, 16),
+
                     ContextMenu = new ContextMenu(new MenuItem[] {
                                                     new MenuItem("Settings", Settings),
                                                     new MenuItem("Exit", Exit)
