@@ -19,14 +19,17 @@ namespace EducationHelper
             if (Settings.Lang == Language.Spanish)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconSpain;
+                checkBox_verbs.Visible = false;
             }
             else if (Settings.Lang == Language.Italian)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconItaly;
+                checkBox_verbs.Visible = false;
             }
             else
             {
                 this.Icon = EducationHelper.Properties.Resources.IconEnglish;
+                checkBox_verbs.Visible = true;
             }
 
             InitControls();
@@ -112,8 +115,16 @@ namespace EducationHelper
         {
             Settings.Lang = (Language)comboBox_language.SelectedItem;
             if (LanguageChanged != null)
-            {
+            {                
                 LanguageChanged();
+            }
+            if (Settings.Lang == Language.English)
+            {
+                checkBox_verbs.Visible = true;
+            }
+            else
+            {
+                checkBox_verbs.Visible = false;
             }
         }
 

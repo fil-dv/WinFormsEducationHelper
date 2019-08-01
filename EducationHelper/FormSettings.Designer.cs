@@ -36,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox_language = new System.Windows.Forms.ComboBox();
             this.button_load = new System.Windows.Forms.Button();
+            this.checkBox_verbs = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_interval)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +73,7 @@
             // 
             // button_settings_ok
             // 
-            this.button_settings_ok.Location = new System.Drawing.Point(119, 148);
+            this.button_settings_ok.Location = new System.Drawing.Point(119, 171);
             this.button_settings_ok.Name = "button_settings_ok";
             this.button_settings_ok.Size = new System.Drawing.Size(75, 23);
             this.button_settings_ok.TabIndex = 5;
@@ -82,7 +83,7 @@
             // 
             // button_settings_cancel
             // 
-            this.button_settings_cancel.Location = new System.Drawing.Point(19, 148);
+            this.button_settings_cancel.Location = new System.Drawing.Point(19, 171);
             this.button_settings_cancel.Name = "button_settings_cancel";
             this.button_settings_cancel.Size = new System.Drawing.Size(75, 23);
             this.button_settings_cancel.TabIndex = 6;
@@ -118,11 +119,22 @@
             this.button_load.UseVisualStyleBackColor = true;
             this.button_load.Click += new System.EventHandler(this.button_load_Click);
             // 
+            // checkBox_verbs
+            // 
+            this.checkBox_verbs.AutoSize = true;
+            this.checkBox_verbs.Location = new System.Drawing.Point(59, 138);
+            this.checkBox_verbs.Name = "checkBox_verbs";
+            this.checkBox_verbs.Size = new System.Drawing.Size(94, 17);
+            this.checkBox_verbs.TabIndex = 12;
+            this.checkBox_verbs.Text = "Irregular Verbs";
+            this.checkBox_verbs.UseVisualStyleBackColor = true;
+            // 
             // FormSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(206, 193);
+            this.ClientSize = new System.Drawing.Size(206, 206);
+            this.Controls.Add(this.checkBox_verbs);
             this.Controls.Add(this.button_load);
             this.Controls.Add(this.comboBox_language);
             this.Controls.Add(this.label3);
@@ -147,5 +159,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox_language;
         private System.Windows.Forms.Button button_load;
+        private System.Windows.Forms.CheckBox checkBox_verbs;
     }
 }

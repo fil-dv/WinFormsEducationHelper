@@ -92,7 +92,6 @@ namespace EducationHelper
             {
                 _trayIcon = new NotifyIcon()
                 {
-                    //Icon = new Icon("..\\..\\img\\spain_flag.ico"),
                     Icon = new Icon(Properties.Resources.IconSpain, 16, 16),
                     ContextMenu = new ContextMenu(new MenuItem[] {
                                                     new MenuItem("Settings", Settings),
@@ -105,7 +104,6 @@ namespace EducationHelper
             {
                 _trayIcon = new NotifyIcon()
                 {
-                    //Icon = new Icon("..\\..\\img\\italy_flag.ico"),
                     Icon = new Icon(Properties.Resources.IconItaly, 16, 16),
                     ContextMenu = new ContextMenu(new MenuItem[] {
                                                     new MenuItem("Settings", Settings),
@@ -118,7 +116,6 @@ namespace EducationHelper
             {
                 _trayIcon = new NotifyIcon()
                 {
-                    //Icon = new Icon("..\\..\\img\\english_flag.ico"),
                     Icon = new Icon(Properties.Resources.IconEnglish, 16, 16),
 
                     ContextMenu = new ContextMenu(new MenuItem[] {

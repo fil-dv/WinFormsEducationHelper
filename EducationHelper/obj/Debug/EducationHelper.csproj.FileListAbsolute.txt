@@ -23,4 +23,3 @@ D:\GIT\EngHelper\EducationHelper\obj\Debug\EducationHelper.csproj.GenerateResour
 D:\GIT\EngHelper\EducationHelper\obj\Debug\EducationHelper.csproj.CoreCompileInputs.cache
 D:\GIT\EngHelper\EducationHelper\obj\Debug\EducationHelper.exe
 D:\GIT\EngHelper\EducationHelper\obj\Debug\EducationHelper.pdb
-D:\GIT\EngHelper\EducationHelper\obj\Debug\EducationHelper.csprojAssemblyReference.cache
