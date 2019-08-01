@@ -138,11 +138,18 @@ namespace EducationHelper
             }
             else if (EducationHelper.Settings.Lang == Language.Italian)
             {
-                EducationHelper.Settings.PathToFile = @"Data\Italian\questions.txt ";
+                EducationHelper.Settings.PathToFile = @"Data\Italian\questions.txt";
             }
             else
             {
-                EducationHelper.Settings.PathToFile = @"Data\English\questions.txt ";
+                if (EducationHelper.Settings.IsIrVerbs == true)
+                {
+                    EducationHelper.Settings.PathToFile = @"Data\English\verbs.txt";
+                }
+                else
+                {
+                    EducationHelper.Settings.PathToFile = @"Data\English\questions.txt";
+                }
             }
         }
 

@@ -128,6 +128,7 @@
             this.checkBox_verbs.TabIndex = 12;
             this.checkBox_verbs.Text = "Irregular Verbs";
             this.checkBox_verbs.UseVisualStyleBackColor = true;
+            this.checkBox_verbs.CheckedChanged += new System.EventHandler(this.checkBox_verbs_CheckedChanged);
             // 
             // FormSettings
             // 

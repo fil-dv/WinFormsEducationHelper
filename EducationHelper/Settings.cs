@@ -11,5 +11,6 @@ namespace EducationHelper
 
         public static string PathToAnswere { get; set; }
         public static Language Lang { get; set; }
+        public static bool IsIrVerbs { get; set; } 
     }
 }

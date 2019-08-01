@@ -39,6 +39,7 @@
             this.richTextBox_task.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox_task.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.richTextBox_task.Location = new System.Drawing.Point(12, 12);
             this.richTextBox_task.Name = "richTextBox_task";
             this.richTextBox_task.Size = new System.Drawing.Size(440, 183);

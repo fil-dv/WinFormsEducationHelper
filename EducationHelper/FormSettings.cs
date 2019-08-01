@@ -30,6 +30,14 @@ namespace EducationHelper
             {
                 this.Icon = EducationHelper.Properties.Resources.IconEnglish;
                 checkBox_verbs.Visible = true;
+                if (Settings.IsIrVerbs == true)
+                {
+                    checkBox_verbs.Checked = true;
+                }
+                else
+                {
+                    checkBox_verbs.Checked = false;
+                }
             }
 
             InitControls();
@@ -92,7 +100,7 @@ namespace EducationHelper
             {
                 File.Create("Data\\settings.txt").Close();                
             }
-            string settings = language + ":" + interval.ToString();
+            string settings = $"{language}:{interval.ToString()}" ;
             File.WriteAllText("Data\\settings.txt", settings, Encoding.Default);
         }
 
@@ -120,10 +128,12 @@ namespace EducationHelper
             }
             if (Settings.Lang == Language.English)
             {
+                Settings.IsIrVerbs = true;
                 checkBox_verbs.Visible = true;
             }
             else
             {
+                Settings.IsIrVerbs = false;
                 checkBox_verbs.Visible = false;
             }
         }
@@ -169,6 +179,25 @@ namespace EducationHelper
             File.WriteAllText(pathToTxt, "");
             File.AppendAllLines(pathToTxt, strList, System.Text.Encoding.UTF8);
             MessageBox.Show("Questions list updated. (" + strList.Count + ")", Settings.Lang.ToString(), MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void checkBox_verbs_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox_verbs.Checked == true)
+            {
+                Settings.IsIrVerbs = true;
+                //MessageBox.Show($"Settings.IsIrVerbs = {Settings.IsIrVerbs}");
+
+            }
+            else
+            {
+                Settings.IsIrVerbs = false;
+                //MessageBox.Show($"Settings.IsIrVerbs = {Settings.IsIrVerbs}");
+            }
+            if (LanguageChanged != null)
+            {
+                LanguageChanged();
+            }
         }
     }
 }

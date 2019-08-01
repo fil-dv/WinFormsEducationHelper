@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
@@ -10,6 +11,9 @@ namespace EducationHelper
     public partial class FormTask : Form
     {
         private static readonly Random getrandom = new Random();
+
+        [DllImport("user32.dll")]
+        private static extern int HideCaret(IntPtr hwnd);
 
         String[] _taskArr = new string[2];
         public FormTask()
@@ -39,14 +43,29 @@ namespace EducationHelper
             try
             {
                 richTextBox_task.Text = "";
-                string[] strArr = File.ReadAllLines(EducationHelper.Settings.PathToFile, Encoding.Default);
-                string taskStr = GetRandonStr(strArr);
+                string[] allStr = File.ReadAllLines(EducationHelper.Settings.PathToFile, Encoding.Default);
+                List<string> strList = new List<string>();
+                foreach (var item in allStr)
+                {
+                    
+                    if (item.TrimStart()[0] == '-' || item.TrimStart()[1] == '-')
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        strList.Add(item.Trim());
+                    }
+                }
+                string taskStr = GetRandonStr(strList);
                 _taskArr = taskStr.Trim().Split('|');
                 richTextBox_task.AppendText("\n\n   " + _taskArr[0].Trim());
+                TextAlightment();
                 if (_taskArr.Length > 1)
                 {
                     button_show_answer.Visible = true;
                 }
+                HideCaret(richTextBox_task.Handle);
             }
             catch (Exception ex)
             {
@@ -54,9 +73,16 @@ namespace EducationHelper
             }            
         }
 
-        private string GetRandonStr(string[] strArr)
+        private void TextAlightment()
         {
-            return strArr[GetRandomNumber(0, strArr.Length -1)];
+            richTextBox_task.SelectAll();
+            richTextBox_task.SelectionAlignment = HorizontalAlignment.Center;
+            richTextBox_task.DeselectAll();
+        }
+
+        private string GetRandonStr(List<string> strArr)
+        {
+            return strArr[GetRandomNumber(0, strArr.Count)];
         }
 
         public static int GetRandomNumber(int min, int max)
