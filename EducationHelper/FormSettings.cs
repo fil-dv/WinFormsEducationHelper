@@ -15,7 +15,28 @@ namespace EducationHelper
         public FormSettings()
         {
             InitializeComponent();
+            SetIcon();
+            InitControls();
+            _changer.OldInterval = Settings.Interval;
+           
+        }
 
+        private void FormSettings_Load(object sender, EventArgs e)
+        {
+            //this.KeyPreview = true;
+            //this.KeyDown += FormSettings_KeyDown;
+        }
+
+        private void FormSettings_KeyDown(object sender, KeyEventArgs e)
+        {
+            //if (e.KeyCode.ToString() == "F1")
+            //{
+            //    MessageBox.Show("F1 pressed");
+            //}
+        }
+
+        private void SetIcon()
+        {
             if (Settings.Lang == Language.Spanish)
             {
                 this.Icon = EducationHelper.Properties.Resources.IconSpain;
@@ -39,9 +60,6 @@ namespace EducationHelper
                     checkBox_verbs.Checked = false;
                 }
             }
-
-            InitControls();
-            _changer.OldInterval = Settings.Interval;
         }
 
         void InitControls()
@@ -202,5 +220,7 @@ namespace EducationHelper
             FormEdit fe = new FormEdit();
             fe.ShowDialog();
         }
+
+
     }
 }

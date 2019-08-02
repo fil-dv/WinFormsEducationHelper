@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace EducationHelper
@@ -13,6 +14,17 @@ namespace EducationHelper
             SetIcon();
             InitPathToFile();
             FillTextBox();
+            this.KeyPreview = true;
+            this.KeyDown += FormEdit_KeyDown; ;
+        }
+
+        private void FormEdit_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                FormAbout fa = new FormAbout();
+                fa.Show();
+            }
         }
 
         private void SetIcon()
@@ -50,7 +62,7 @@ namespace EducationHelper
 
         private string[] ReadQuestionsFromFile()
         {            
-            return File.ReadAllLines(_path);
+            return File.ReadAllLines(_path, Encoding.Default);
         }
 
         private void InitPathToFile()
@@ -83,14 +95,13 @@ namespace EducationHelper
         {
             try
             {
-                File.WriteAllText(_path, text);
+                File.WriteAllText(_path, text, Encoding.Default);
                 MessageBox.Show("Questions updated successfully.", "Questions editor", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
-            
+            }            
         }
     }
 }

@@ -58,6 +58,7 @@
             this.ClientSize = new System.Drawing.Size(800, 486);
             this.Controls.Add(this.button_save);
             this.Controls.Add(this.richTextBox_edit);
+            this.HelpButton = true;
             this.Name = "FormEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Questions Editor";

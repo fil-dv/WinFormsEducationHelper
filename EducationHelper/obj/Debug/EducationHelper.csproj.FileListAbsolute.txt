@@ -104,3 +104,4 @@ D:\GIT\EngHelper\EducationHelper\bin\Debug\ja\DevExpress.Office.v13.2.Core.resou
 D:\GIT\EngHelper\EducationHelper\bin\Debug\ru\DevExpress.Office.v13.2.Core.resources.dll
 D:\GIT\EngHelper\EducationHelper\obj\Debug\EducationHelper.FormEdit.resources
 D:\GIT\EngHelper\EducationHelper\obj\Debug\EducationHelper.csproj.CopyComplete
+D:\GIT\EngHelper\EducationHelper\obj\Debug\EducationHelper.FormAbout.resources
