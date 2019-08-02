@@ -186,18 +186,21 @@ namespace EducationHelper
             if (checkBox_verbs.Checked == true)
             {
                 Settings.IsIrVerbs = true;
-                //MessageBox.Show($"Settings.IsIrVerbs = {Settings.IsIrVerbs}");
-
             }
             else
             {
                 Settings.IsIrVerbs = false;
-                //MessageBox.Show($"Settings.IsIrVerbs = {Settings.IsIrVerbs}");
             }
             if (LanguageChanged != null)
             {
                 LanguageChanged();
             }
+        }
+
+        private void button_edit_Click(object sender, EventArgs e)
+        {
+            FormEdit fe = new FormEdit();
+            fe.ShowDialog();
         }
     }
 }

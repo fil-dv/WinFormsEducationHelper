@@ -12,9 +12,6 @@ namespace EducationHelper
     {
         private static readonly Random getrandom = new Random();
 
-        [DllImport("user32.dll")]
-        private static extern int HideCaret(IntPtr hwnd);
-
         String[] _taskArr = new string[2];
         public FormTask()
         {
@@ -59,13 +56,15 @@ namespace EducationHelper
                 }
                 string taskStr = GetRandonStr(strList);
                 _taskArr = taskStr.Trim().Split('|');
-                richTextBox_task.AppendText("\n\n   " + _taskArr[0].Trim());
+                richTextBox_task.AppendText("\n\n\n" + _taskArr[0].Trim());
                 TextAlightment();
                 if (_taskArr.Length > 1)
                 {
                     button_show_answer.Visible = true;
                 }
-                HideCaret(richTextBox_task.Handle);
+
+                richTextBox_task.ReadOnly = true;
+                richTextBox_task.TabStop = false;
             }
             catch (Exception ex)
             {
@@ -105,8 +104,9 @@ namespace EducationHelper
                 if (IsItPhoto() == false)
                 {
                     richTextBox_task.AppendText("\n\n");
-                    richTextBox_task.AppendText(_taskArr[1]);
+                    richTextBox_task.AppendText(_taskArr[1].Trim());
                     button_show_answer.Visible = false;
+
                 }
                 else
                 {
